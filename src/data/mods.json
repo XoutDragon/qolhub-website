@@ -1,0 +1,62 @@
+[
+  {
+    "id": "skyblock-extras",
+    "name": "Skyblock Extras",
+    "discord": "discord.gg/sbe",
+    "developers": "AlphaElite",
+    "paid": true,
+    "price": 5,
+    "icon": "https://i.imgur.com/11ELob9.png",
+    "website": "https://skyblockextras.com",
+    "tags": ["skyblock"]
+  },
+  {
+    "id": "skytils",
+    "name": "Skytils",
+    "discord": "discord.gg/skytils",
+    "developers": "Sychic#5005, lily💕#0999",
+    "paid": false,
+    "icon": "https://avatars.githubusercontent.com/u/78452287",
+    "github": "https://github.com/Skytils/SkytilsMod/releases",
+    "tags": ["skyblock"]
+  },
+  {
+    "id": "skyblockcatia",
+    "name": "Skyblockcatia",
+    "developers": "SteveKunG",
+    "paid": false,
+    "icon": "https://media.forgecdn.net/avatars/288/186/637310718220929564.png",
+    "github": "https://github.com/SteveKunG/SkyBlockcatia",
+    "tags": ["skyblock", "outdated"]
+  },
+  {
+    "id": "skyblockaddons",
+    "name": "SkyblockAddons",
+    "discord": "https://discord.gg/FvhWJH2b5b",
+    "developers": "Biscuit#1111",
+    "paid": false,
+    "icon": "https://media.forgecdn.net/avatars/288/185/637310718220929564.png",
+    "website": "https://biscuit.codes/mods/skyblockaddons/",
+    "github": "https://github.com/BiscuitDevelopment/SkyblockAddons",
+    "tags": ["skyblock"]
+  },
+  {
+    "id": "notenoughupdates",
+    "name": "NotEnoughUpdates",
+    "discord": "https://discord.gg/moulberry",
+    "developers": "Moulberry#0001",
+    "paid": false,
+    "icon": "https://media.forgecdn.net/avatars/288/184/637310718220929564.png",
+    "github": "https://github.com/Moulberry/NotEnoughUpdates",
+    "tags": ["skyblock"]
+  },
+  {
+    "id": "hyaddons",
+    "name": "HyAddons",
+    "developers": "jerome#1028",
+    "paid": false,
+    "icon": "https://avatars.githubusercontent.com/u/86937238",
+    "github": "https://github.com/HyAddons/HyAddons",
+    "tags": ["skyblock", "outdated"]
+  }
+]
