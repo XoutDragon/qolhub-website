@@ -12,9 +12,14 @@ export default function Footer() {
           rel='noopener noreferrer'
           className='flex items-center justify-center'
         >
-          Powered by{' '}
-          <span className='h-4 ml-2 dark:invert'>
-            <Image src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />
+          Developed by{' '}
+          <span className='h-4 ml-2 dark:invert -translate-y-1'>
+            <Image
+              src='/images/kieruken.png'
+              alt='Kieruken Logo'
+              width={80}
+              height={20}
+            />
           </span>
         </a>
         <div className='ml-5'>
