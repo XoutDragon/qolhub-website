@@ -94,7 +94,7 @@ export default function Home() {
               <img
                 src={mod.icon}
                 alt={`${mod.name} Image`}
-                className={`h-16 w-auto min-w-fit rounded-3xl`}
+                className={`h-16 w-16 rounded-3xl`}
               />
             </div>
             <div className='text-lg max-w-xss sm:max-w-none sm:text-2xl align-center h-full my-auto text-right'>
