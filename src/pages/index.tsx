@@ -51,24 +51,21 @@ export default function Home() {
           <div className='grid grid-cols-2 gap-x-6 gap-y-4'>
             {mod.website ? (
               <a href={mod.website} className='flex hover:opacity-70'>
-                <FaGlobe className='translate-y-1 mr-2 hidden xs:block' />{' '}
-                Website
+                <FaGlobe className='translate-y-1 mr-2' /> Website
               </a>
             ) : (
               ''
             )}
             {mod.discord ? (
               <a href={mod.discord} className='flex hover:opacity-70'>
-                <FaDiscord className='translate-y-1 mr-2 hidden xs:block' />{' '}
-                Discord
+                <FaDiscord className='translate-y-1 mr-2' /> Discord
               </a>
             ) : (
               ''
             )}
             {mod.github ? (
               <a href={mod.github} className='flex hover:opacity-70'>
-                <FaGithub className='translate-y-1 mr-2 hidden xs:block' />{' '}
-                Github
+                <FaGithub className='translate-y-1 mr-2' /> Github
               </a>
             ) : (
               ''
@@ -117,24 +114,21 @@ export default function Home() {
               <div className='grid grid-cols-2 gap-x-6 gap-y-4'>
                 {mod.website ? (
                   <a href={mod.website} className='flex hover:opacity-70'>
-                    <FaGlobe className='translate-y-1 mr-2 hidden xs:block' />{' '}
-                    Website
+                    <FaGlobe className='translate-y-1 mr-2' /> Website
                   </a>
                 ) : (
                   ''
                 )}
                 {mod.discord ? (
                   <a href={mod.discord} className='flex hover:opacity-70'>
-                    <FaDiscord className='translate-y-1 mr-2 hidden xs:block' />{' '}
-                    Discord
+                    <FaDiscord className='translate-y-1 mr-2' /> Discord
                   </a>
                 ) : (
                   ''
                 )}
                 {mod.github ? (
                   <a href={mod.github} className='flex hover:opacity-70'>
-                    <FaGithub className='translate-y-1 mr-2 hidden xs:block' />{' '}
-                    Github
+                    <FaGithub className='translate-y-1 mr-2' /> Github
                   </a>
                 ) : (
                   ''
