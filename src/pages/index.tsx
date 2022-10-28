@@ -31,7 +31,7 @@ export default function Home() {
           <img
             src={mod.icon}
             alt={`${mod.name} Image`}
-            className={`h-16 w-auto min-w-fit rounded-3xl`}
+            className={`w-16 h-16 rounded-3xl`}
           />
         </div>
         <div className='text-lg max-w-xss sm:max-w-none sm:text-2xl align-center h-full my-auto text-right'>
@@ -210,7 +210,7 @@ export default function Home() {
             }}
           />
         </div>
-        <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto md:w-5/6 mb-20'>
+        <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto md:w-11/12 lg:w-5/6 mb-20'>
           {modList}
           {cheatsList}
         </div>
