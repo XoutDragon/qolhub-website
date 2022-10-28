@@ -1,17 +1,163 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
 import Image from 'next/image';
 import Footer from '../components/home/Footer';
 import Header from '../components/home/Header';
-import { FaDiscord } from 'react-icons/fa';
+import { FaDiscord, FaGlobe, FaGithub } from 'react-icons/fa';
 import { useState } from 'react';
+import mods from '../data/mods.json';
+import cheats from '../data/cheats.json';
 
 export default function Home() {
-  const [cheats, enableCheats] = useState(false);
-  let cheatText = cheats ? 'Show Cheats: Enabled' : 'Show Cheats: Disabled';
-  let cheatColor = cheats ? 'border-green-600' : 'border-red-500';
+  const [enableCheats, setCheats] = useState(false);
+  let cheatText = enableCheats
+    ? 'Show Cheats: Enabled'
+    : 'Show Cheats: Disabled';
+  let cheatColor = enableCheats ? 'border-green-600' : 'border-red-500';
+  const [filter, setFilter] = useState('');
+
+  const modsFiltered = mods.filter((mod) =>
+    mod.name.toLowerCase().includes(filter.toLowerCase())
+  );
+
+  const cheatsFiltered = cheats.filter((cheat) =>
+    cheat.name.toLowerCase().includes(filter.toLowerCase())
+  );
+
+  const modList = modsFiltered.map((mod: any, i) => (
+    <div key={mod.id} className=''>
+      <div className='bg-gradient-to-r from-green-600 to-blue-700 p-4 lg:px-6 lg:pt-6 lg:pb-4 rounded-t-3xl flex justify-between'>
+        <div className=''>
+          <img
+            src={mod.icon}
+            alt={`${mod.name} Image`}
+            className={`h-16 w-auto min-w-fit rounded-3xl`}
+          />
+        </div>
+        <div className='text-lg max-w-xss sm:max-w-none sm:text-2xl align-center h-full my-auto text-right'>
+          {mod.name}
+        </div>
+      </div>
+      <div className='bg-black px-8 py-4 rounded-b-3xl shadow-2xl shadow-black min-h-52'>
+        <div className='mb-4 min-h-12'>
+          <div>Developer: {mod.developers} </div>
+          {mod.paid ? (
+            <div className='text-red-500'>Price: ${mod.price}</div>
+          ) : (
+            ''
+          )}
+        </div>
+        <div className='min-h-16'>
+          <div className='grid grid-cols-2 gap-x-6 gap-y-4'>
+            {mod.website ? (
+              <a href={mod.website} className='flex hover:opacity-70'>
+                <FaGlobe className='translate-y-1 mr-2 hidden xs:block' />{' '}
+                Website
+              </a>
+            ) : (
+              ''
+            )}
+            {mod.discord ? (
+              <a href={mod.discord} className='flex hover:opacity-70'>
+                <FaDiscord className='translate-y-1 mr-2 hidden xs:block' />{' '}
+                Discord
+              </a>
+            ) : (
+              ''
+            )}
+            {mod.github ? (
+              <a href={mod.github} className='flex hover:opacity-70'>
+                <FaGithub className='translate-y-1 mr-2 hidden xs:block' />{' '}
+                Github
+              </a>
+            ) : (
+              ''
+            )}
+          </div>
+        </div>
+        <div className='mt-5'>
+          {mod.tags.map((tag: string, i: number) => (
+            <span
+              key={i}
+              className='inline-block bg-gray-900 rounded-full px-3 py-1 text-sm font-semibold text-gray-400 mr-2 mb-2'
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  ));
+
+  const cheatsList = enableCheats
+    ? cheatsFiltered.map((mod: any, i) => (
+        <div key={mod.id} className=''>
+          <div className='bg-gradient-to-r from-green-600 to-blue-700 p-4 lg:px-6 lg:pt-6 lg:pb-4 rounded-t-3xl flex justify-between'>
+            <div className=''>
+              <img
+                src={mod.icon}
+                alt={`${mod.name} Image`}
+                className={`h-16 w-auto min-w-fit rounded-3xl`}
+              />
+            </div>
+            <div className='text-lg max-w-xss sm:max-w-none sm:text-2xl align-center h-full my-auto text-right'>
+              {mod.name}
+            </div>
+          </div>
+          <div className='bg-black px-8 py-4 rounded-b-3xl shadow-2xl shadow-black min-h-52'>
+            <div className='mb-4 min-h-12'>
+              <div>Developer: {mod.developers} </div>
+              {mod.paid ? (
+                <div className='text-red-500'>Price: ${mod.price}</div>
+              ) : (
+                ''
+              )}
+            </div>
+            <div className='min-h-16'>
+              <div className='grid grid-cols-2 gap-x-6 gap-y-4'>
+                {mod.website ? (
+                  <a href={mod.website} className='flex hover:opacity-70'>
+                    <FaGlobe className='translate-y-1 mr-2 hidden xs:block' />{' '}
+                    Website
+                  </a>
+                ) : (
+                  ''
+                )}
+                {mod.discord ? (
+                  <a href={mod.discord} className='flex hover:opacity-70'>
+                    <FaDiscord className='translate-y-1 mr-2 hidden xs:block' />{' '}
+                    Discord
+                  </a>
+                ) : (
+                  ''
+                )}
+                {mod.github ? (
+                  <a href={mod.github} className='flex hover:opacity-70'>
+                    <FaGithub className='translate-y-1 mr-2 hidden xs:block' />{' '}
+                    Github
+                  </a>
+                ) : (
+                  ''
+                )}
+              </div>
+            </div>
+            <div className='mt-5'>
+              {mod.tags.map((tag: string, i: number) => (
+                <span
+                  key={i}
+                  className='inline-block bg-gray-900 rounded-full px-3 py-1 text-sm font-semibold text-gray-400 mr-2 mb-2'
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))
+    : '';
 
   return (
-    <div className=''>
+    <div className='h-screen scrollbar-thin scrollbar-thumb-rounded-md scrollbar-thumb-blue-600 dark:scrollbar-track-gray-900'>
       <Head>
         <title>QOL Hub</title>
         <meta name='description' content='Generated by create next app' />
@@ -33,8 +179,8 @@ export default function Home() {
             </a>
             <button
               className={`py-3 px-6 border ${cheatColor} rounded-lg shadow-lg`}
-              onClick={(e) => {
-                enableCheats(!cheats);
+              onClick={(_e) => {
+                setCheats(!enableCheats);
               }}
             >
               {cheatText}
@@ -65,10 +211,17 @@ export default function Home() {
             className='block p-4 pl-10 w-full text-sm rounded-lg border border-gray-400 placeholder-gray-400 focus:ring-blue-500 focus:border-blue-500'
             placeholder='Search for Mods'
             required
+            onChange={(e) => {
+              setFilter(e.target.value);
+            }}
           />
         </div>
+        <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto md:w-5/6 mb-20'>
+          {modList}
+          {cheatsList}
+        </div>
+        <Footer />
       </main>
-      <Footer />
     </div>
   );
 }

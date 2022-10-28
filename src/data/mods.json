@@ -8,7 +8,7 @@
     "price": 5,
     "icon": "https://i.imgur.com/11ELob9.png",
     "website": "https://skyblockextras.com",
-    "tags": ["skyblock"]
+    "tags": ["skyblock", "paid"]
   },
   {
     "id": "skytils",
@@ -22,7 +22,7 @@
   },
   {
     "id": "skyblockcatia",
-    "name": "Skyblockcatia",
+    "name": "Skyblock Catia",
     "developers": "SteveKunG",
     "paid": false,
     "icon": "https://media.forgecdn.net/avatars/288/186/637310718220929564.png",
@@ -31,11 +31,11 @@
   },
   {
     "id": "skyblockaddons",
-    "name": "SkyblockAddons",
+    "name": "Skyblock Addons",
     "discord": "https://discord.gg/FvhWJH2b5b",
     "developers": "Biscuit#1111",
     "paid": false,
-    "icon": "https://media.forgecdn.net/avatars/288/185/637310718220929564.png",
+    "icon": "https://avatars.githubusercontent.com/u/56459009",
     "website": "https://biscuit.codes/mods/skyblockaddons/",
     "github": "https://github.com/BiscuitDevelopment/SkyblockAddons",
     "tags": ["skyblock"]
@@ -46,7 +46,7 @@
     "discord": "https://discord.gg/moulberry",
     "developers": "Moulberry#0001",
     "paid": false,
-    "icon": "https://media.forgecdn.net/avatars/288/184/637310718220929564.png",
+    "icon": "https://avatars.githubusercontent.com/u/12858993",
     "github": "https://github.com/Moulberry/NotEnoughUpdates",
     "tags": ["skyblock"]
   },
