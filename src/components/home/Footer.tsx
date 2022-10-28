@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className='mx-4 sm:mx-10'>
       <div className='flex justify-center p-2 border-t border-solid border-[#eaeaea] items-center flex-1 py-5'>
         <a
-          href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
+          href='https://www.kieruken.dev'
           target='_blank'
           rel='noopener noreferrer'
           className='flex items-center justify-center'
