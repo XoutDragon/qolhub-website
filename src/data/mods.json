@@ -27,7 +27,7 @@
     "paid": false,
     "icon": "https://media.forgecdn.net/avatars/288/186/637310718220929564.png",
     "github": "https://github.com/SteveKunG/SkyBlockcatia",
-    "tags": ["skyblock", "outdated"]
+    "tags": ["skyblock", "discontinued"]
   },
   {
     "id": "skyblockaddons",
@@ -51,12 +51,74 @@
     "tags": ["skyblock"]
   },
   {
+    "id": "hychat",
+    "name": "Hychat",
+    "developers": "Moulberry#0001",
+    "discord": "https://discord.gg/moulberry",
+    "paid": false,
+    "icon": "https://avatars.githubusercontent.com/u/12858993",
+    "github": "https://github.com/Moulberry/Hychat",
+    "tags": ["skyblock"]
+  },
+  {
     "id": "hyaddons",
     "name": "HyAddons",
     "developers": "jerome#1028",
     "paid": false,
     "icon": "https://avatars.githubusercontent.com/u/86937238",
     "github": "https://github.com/HyAddons/HyAddons",
-    "tags": ["skyblock", "outdated"]
+    "tags": ["skyblock", "discontinued"]
+  },
+  {
+    "id": "cowlection",
+    "name": "Cowlection",
+    "developers": "Cow#1336",
+    "paid": false,
+    "icon": "https://cowtipper.de/images/cow.svg",
+    "github": "https://github.com/cow-mc/Cowlection",
+    "website": "https://cowtipper.de",
+    "discord": "https://discord.gg/cowshed",
+    "tags": ["skyblock"]
+  },
+  {
+    "id": "dungeon-guide",
+    "name": "Dungeon Guide",
+    "developers": "syeyoung#3876",
+    "paid": false,
+    "icon": "https://avatars.githubusercontent.com/u/87838487",
+    "github": "https://github.com/Dungeons-Guide/Skyblock-Dungeons-Guide",
+    "discord": "https://discord.gg/vuGsXhY5Bv",
+    "tags": ["skyblock"]
+  },
+  {
+    "id": "skyblockpersonalized",
+    "name": "SkyblockPersonalized",
+    "developers": "Cobble8#0881",
+    "paid": false,
+    "icon": "https://imgur.com/wX0IedV.png",
+    "github": "https://github.com/Cobble8/SkyblockPersonalized",
+    "discord": "https://discord.gg/hh2qD4ysRA",
+    "tags": ["skyblock"]
+  },
+  {
+    "id": "dungeon-rooms-mod",
+    "name": "Dungeon Rooms Mod",
+    "developers": "_risk#2091",
+    "paid": false,
+    "icon": "https://imgur.com/ydVHMVv.png",
+    "github": "https://github.com/Quantizr/DungeonRoomsMod",
+    "discord": "https://discord.gg/yfMYmm2rkX",
+    "website": "https://quantizr.github.io",
+    "tags": ["skyblock", "discontinued"]
+  },
+  {
+    "id": "dankers-skyblock-mod",
+    "name": "Danker's Skyblock Mod",
+    "developers": "DankerWanker (2D > 3D)#4544",
+    "paid": false,
+    "icon": "https://imgur.com/j2Pwf3n.png",
+    "github": "https://github.com/bowser0000/SkyblockMod",
+    "discord": "https://discord.gg/QsEkNQS",
+    "tags": ["skyblock", "discontinued"]
   }
 ]

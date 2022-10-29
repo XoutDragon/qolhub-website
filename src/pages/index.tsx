@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
 import Image from 'next/image';
@@ -43,7 +44,7 @@ export default function Home() {
           {mod.name}
         </div>
       </div>
-      <div className='bg-black px-8 py-4 rounded-b-3xl shadow-2xl shadow-black min-h-52'>
+      <div className='bg-black px-8 py-4 rounded-b-3xl shadow-2xl shadow-black min-h-64'>
         <div className='mb-4 min-h-12'>
           <div>Developer: {mod.developers} </div>
           {mod.paid ? (
@@ -53,7 +54,7 @@ export default function Home() {
           )}
         </div>
         <div className='min-h-16'>
-          <div className='grid grid-cols-2 gap-x-6 gap-y-4'>
+          <div className='grid grid-cols-2 gap-x-6 gap-y-2'>
             {mod.website ? (
               <a href={mod.website} className='flex hover:opacity-70'>
                 <FaGlobe className='translate-y-1 mr-2' /> Website
@@ -94,7 +95,7 @@ export default function Home() {
   const cheatsList = enableCheats
     ? cheatsFiltered.map((mod: any, i) => (
         <div key={mod.id} className=''>
-          <div className='bg-gradient-to-r from-green-600 to-blue-700 p-4 lg:px-6 lg:pt-6 lg:pb-4 rounded-t-3xl flex justify-between'>
+          <div className='bg-gradient-to-r from-red-600 to-yellow-700 p-4 lg:px-6 lg:pt-6 lg:pb-4 rounded-t-3xl flex justify-between'>
             <div className=''>
               <img
                 src={mod.icon}
@@ -106,7 +107,7 @@ export default function Home() {
               {mod.name}
             </div>
           </div>
-          <div className='bg-black px-8 py-4 rounded-b-3xl shadow-2xl shadow-black min-h-52'>
+          <div className='bg-black px-8 py-4 rounded-b-3xl shadow-2xl shadow-black min-h-64'>
             <div className='mb-4 min-h-12'>
               <div>Developer: {mod.developers} </div>
               {mod.paid ? (
@@ -116,7 +117,7 @@ export default function Home() {
               )}
             </div>
             <div className='min-h-16'>
-              <div className='grid grid-cols-2 gap-x-6 gap-y-4'>
+              <div className='grid grid-cols-2 gap-x-6 gap-y-2'>
                 {mod.website ? (
                   <a href={mod.website} className='flex hover:opacity-70'>
                     <FaGlobe className='translate-y-1 mr-2' /> Website
