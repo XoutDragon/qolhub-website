@@ -10,7 +10,7 @@ export default function Footer() {
           href='https://www.kieruken.dev'
           target='_blank'
           rel='noopener noreferrer'
-          className='flex items-center justify-center'
+          className='flex items-center justify-center text-xs sm:text-lg'
         >
           Developed by{' '}
           <span className='h-4 ml-2 dark:invert -translate-y-1'>

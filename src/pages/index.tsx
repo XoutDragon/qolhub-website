@@ -3,7 +3,12 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Footer from '../components/home/Footer';
 import Header from '../components/home/Header';
-import { FaDiscord, FaGlobe, FaGithub } from 'react-icons/fa';
+import {
+  FaDiscord,
+  FaGlobe,
+  FaGithub,
+  FaExclamationTriangle,
+} from 'react-icons/fa';
 import { useState } from 'react';
 import mods from '../data/mods.json';
 import cheats from '../data/cheats.json';
@@ -160,8 +165,19 @@ export default function Home() {
 
       <Header />
       <main className='my-10 mx-5 h-screen'>
-        <div className='text-3xl text-center'>
+        <div className='text-xl text-center'>
           A Safe Place To Find Unratted & Useful Hypixel Mods
+        </div>
+        <div className='text-sm text-center bg-gray-800 outline-gray-900 outline-4 shadow-sm rounded-md my-4 sm:w-3/5 lg:w-1/2 xl:w-1/3 mx-auto'>
+          <div className='flex justify-center'>
+            <FaExclamationTriangle className='text-yellow-600 translate-y-1 h-14 text-xl' />{' '}
+            <div className='m-2 max-w-xss xs:max-w-xs'>
+              {' '}
+              We do not support cheating, please use at your own risk. These
+              mods are here so people don't get ratted from unreliable sources
+            </div>{' '}
+            <FaExclamationTriangle className='text-yellow-600 translate-y-1 h-14 text-xl' />
+          </div>
         </div>
         <div className='justify-center md:flex text-xs sm:text-lg'>
           <div className='text-center mt-4 grid grid-cols-2 gap-4'>
