@@ -242,7 +242,7 @@ export default function Home() {
           {modList}
         </div>
         <Footer />
-      </main >
-    </div >
+      </main>
+    </div>
   );
 }
