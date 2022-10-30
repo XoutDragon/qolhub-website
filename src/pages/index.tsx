@@ -16,7 +16,7 @@ export default function Home() {
   const [enableCheats, setCheats] = useState(false);
   const [filter, setFilter] = useState('');
   const [enablePaid, setPaid] = useState(true);
-  const [discontinued, setDiscontinued] = useState(false);
+  const [discontinued, setDiscontinued] = useState(true);
 
   const cheatText = enableCheats
     ? 'Show Cheats: Enabled'
