@@ -16,11 +16,30 @@ import cheats from '../data/cheats.json';
 
 export default function Home() {
   const [enableCheats, setCheats] = useState(false);
-  let cheatText = enableCheats
-    ? 'Show Cheats: Enabled'
-    : 'Show Cheats: Disabled';
-  let cheatColor = enableCheats ? 'border-green-600' : 'border-red-500';
+  const [enablePaid, setPaid] = useState(true);
+  let paidText, hoverPaidColor, borderPaidColor;
+  let cheatText, hoverCheatColor, borderCheatColor;
   const [filter, setFilter] = useState('');
+
+  if (enableCheats) {
+    cheatText = 'Show Cheats: Enabled';
+    hoverCheatColor = 'hover:bg-green-600';
+    borderCheatColor = 'border-green-600';
+  } else {
+    cheatText = 'Show Cheats: Disabled'
+    hoverCheatColor = 'hover:bg-red-500';
+    borderCheatColor = 'border-red-500';
+  }
+
+  if (enablePaid) {
+    paidText = 'Show Paid: Enabled';
+    hoverPaidColor = 'hover:bg-green-600';
+    borderPaidColor = 'border-green-600';
+  } else {
+    paidText = 'Show Paid: Disabled';
+    hoverPaidColor = 'hover:bg-red-500';
+    borderPaidColor = 'border-red-500';
+  }
 
   const modsFiltered = mods.filter((mod) =>
     mod.name.toLowerCase().includes(filter.toLowerCase())
@@ -38,8 +57,8 @@ export default function Home() {
 
   const cheatsFiltered: any = enableCheats
     ? cheats.filter((cheat) =>
-        cheat.name.toLowerCase().includes(filter.toLowerCase())
-      )
+      cheat.name.toLowerCase().includes(filter.toLowerCase())
+    )
     : [];
 
   cheatsFiltered.sort((a: any, b: any) => {
@@ -62,23 +81,30 @@ export default function Home() {
     return 0;
   });
 
-  const modList = allMods.map((mod: any, i) => (
+  const paidFiltered: any = enablePaid
+    ? allMods
+    : allMods.filter((mod) => {
+      if (!mod.tags.includes("paid")) {
+        return mod
+      }
+    });
+
+  const modList = paidFiltered.map((mod: any, i: any) => (
     <div key={mod.id} className=''>
       <div
-        className={`${
-          mod.tags.includes('cheats')
-            ? 'bg-gradient-to-r from-red-600 to-yellow-500'
-            : 'bg-gradient-to-r from-green-600 to-blue-700 '
-        } p-4 lg:px-6 lg:pt-6 lg:pb-4 rounded-t-3xl flex justify-between`}
+        className={`${mod.tags.includes('cheats')
+          ? 'bg-gradient-to-r from-red-600 to-yellow-500'
+          : 'bg-gradient-to-r from-green-600 to-blue-700 '
+          } p-4 lg:px-6 lg:pt-6 lg:pb-4 rounded-t-3xl flex justify-evenly text-center`}
       >
         <div className=''>
           <img
             src={mod.icon}
             alt={`${mod.name} Image`}
-            className={`w-16 h-16 rounded-3xl`}
+            className={`w-16 h-16 rounded-3xl mr-4`}
           />
         </div>
-        <div className='text-lg max-w-xss sm:max-w-none sm:text-2xl align-center h-full my-auto text-right'>
+        <div className='text-lg max-w-xss sm:max-w-none sm:text-2xl align-center h-full my-auto text-left'>
           {mod.name}
         </div>
       </div>
@@ -158,7 +184,7 @@ export default function Home() {
           </div>
         </div>
         <div className='justify-center md:flex text-xs sm:text-lg'>
-          <div className='text-center mt-4 grid grid-cols-2 gap-4'>
+          <div className='text-center mt-4 grid-cols-2 gap-x-4'>
             <a href='https://discord.gg/qolhub'>
               <button className='bg-blue-700 py-3 px-6 rounded-lg h-full my-auto opacity-80 hover:opacity-100 shadow-lg'>
                 <FaDiscord className='inline-block mr-3 w-6 translate-y-[-3px]' />
@@ -166,12 +192,20 @@ export default function Home() {
               </button>
             </a>
             <button
-              className={`py-3 px-6 border ${cheatColor} rounded-lg shadow-lg`}
+              className={`py-3 px-6 ml-8 border ${borderCheatColor} rounded-lg shadow-lg ${hoverCheatColor}`}
               onClick={(_e) => {
                 setCheats(!enableCheats);
               }}
             >
               {cheatText}
+            </button>
+            <button
+              className={`py-3 px-6 ml-8 border ${borderPaidColor} rounded-lg shadow-lg ${hoverPaidColor}`}
+              onClick={(_e) => {
+                setPaid(!enablePaid);
+              }}
+            >
+              {paidText}
             </button>
           </div>
         </div>
@@ -208,7 +242,7 @@ export default function Home() {
           {modList}
         </div>
         <Footer />
-      </main>
-    </div>
+      </main >
+    </div >
   );
 }
