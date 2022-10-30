@@ -5,7 +5,7 @@
     "discord": "discord.gg/sbe",
     "developers": "AlphaElite",
     "paid": true,
-    "price": 5,
+    "price": "5.00",
     "icon": "https://i.imgur.com/11ELob9.png",
     "website": "https://skyblockextras.com",
     "tags": ["skyblock", "paid"]
@@ -38,6 +38,17 @@
     "icon": "https://avatars.githubusercontent.com/u/56459009",
     "website": "https://biscuit.codes/mods/skyblockaddons/",
     "github": "https://github.com/BiscuitDevelopment/SkyblockAddons",
+    "tags": ["skyblock"]
+  },
+  {
+    "id": "soopyv2",
+    "name": "SoopyV2",
+    "developers": "Soopyboo32#3042",
+    "paid": false,
+    "icon": "https://imgur.com/xj03fye.png",
+    "github": "https://github.com/Soopyboo32/SoopyV2",
+    "discord": "https://discord.com/invite/dfSMq96RSN",
+    "website": "https://soopy.dev",
     "tags": ["skyblock"]
   },
   {
@@ -120,5 +131,35 @@
     "github": "https://github.com/bowser0000/SkyblockMod",
     "discord": "https://discord.gg/QsEkNQS",
     "tags": ["skyblock", "discontinued"]
+  },
+  {
+    "id": "sk1er-mods",
+    "name": "Sk1ier Mods",
+    "developers": "Sk1er#1030",
+    "paid": false,
+    "icon": "https://imgur.com/YhHaso1.png",
+    "github": "https://github.com/Sk1er",
+    "discord": "https://discord.gg/sk1er",
+    "website": "https://sk1er.club",
+    "tags": ["pvp", "fps"]
+  },
+  {
+    "id": "optifine",
+    "name": "Optifine",
+    "developers": "sp614x",
+    "paid": false,
+    "icon": "https://imgur.com/duRAKcK.png",
+    "github": "https://github.com/sp614x/optifine",
+    "website": "https://www.optifine.net/home",
+    "discord": "https://discord.gg/3mMpcwW",
+    "tags": ["fps"]
+  },
+  {
+    "id": "bloommodule",
+    "name": "BloomModule",
+    "developers": "Unclaimed#6151",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+    "github": "https://github.com/UnclaimedBloom6/BloomModule",
+    "tags": ["skyblock"]
   }
 ]

@@ -46,7 +46,10 @@ export default function Home() {
       </div>
       <div className='bg-black px-8 py-4 rounded-b-3xl shadow-2xl shadow-black min-h-64'>
         <div className='mb-4 min-h-12'>
-          <div>Developer: {mod.developers} </div>
+          <div>
+            Developer{mod.developers.split(', ').length > 1 ? 's' : ''}:{' '}
+            {mod.developers}{' '}
+          </div>
           {mod.paid ? (
             <div className='text-red-500'>Price: ${mod.price}</div>
           ) : (
@@ -109,7 +112,10 @@ export default function Home() {
           </div>
           <div className='bg-black px-8 py-4 rounded-b-3xl shadow-2xl shadow-black min-h-64'>
             <div className='mb-4 min-h-12'>
-              <div>Developer: {mod.developers} </div>
+              <div>
+                Developer{mod.developers.split(', ').length > 1 ? 's' : ''}:{' '}
+                {mod.developers}{' '}
+              </div>
               {mod.paid ? (
                 <div className='text-red-500'>Price: ${mod.price}</div>
               ) : (
@@ -169,7 +175,7 @@ export default function Home() {
         <div className='text-xl text-center'>
           A Safe Place To Find Unratted & Useful Hypixel Mods
         </div>
-        <div className='text-sm text-center bg-gray-800 outline-gray-900 outline-4 shadow-sm rounded-md my-4 sm:w-3/5 lg:w-1/2 xl:w-1/3 mx-auto'>
+        <div className='text-sm text-center bg-gray-800 outline-gray-900 outline-4 shadow-sm rounded-md my-4 sm:w-3/5 lg:w-1/2 xl:w-1/3 2xl:w-1/4 mx-auto'>
           <div className='flex justify-center'>
             <FaExclamationTriangle className='text-yellow-600 translate-y-1 h-14 text-xl' />{' '}
             <div className='m-2 max-w-xss xs:max-w-xs'>
@@ -227,7 +233,7 @@ export default function Home() {
             }}
           />
         </div>
-        <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto md:w-11/12 lg:w-5/6 mb-20'>
+        <div className='grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 mx-auto md:w-11/12 lg:w-5/6 mb-20'>
           {modList}
           {cheatsList}
         </div>

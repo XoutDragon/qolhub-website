@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { ArrowUpIcon } from '@heroicons/react/solid';
 import { Tooltip } from '@mantine/core';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -13,7 +14,7 @@ export default function Footer() {
           className='flex items-center justify-center text-xs sm:text-lg'
         >
           Developed by{' '}
-          <span className='h-4 ml-2 dark:invert -translate-y-1'>
+          <span className='h-4 ml-2 invert -translate-y-1'>
             <Image
               src='/images/kieruken.png'
               alt='Kieruken Logo'
@@ -25,9 +26,9 @@ export default function Footer() {
         <div className='ml-5'>
           <Tooltip label='Back to top'>
             <button className='w-10 h-10 border-2 border-blue-500 rounded-2xl animate-pulse'>
-              <a href='#top'>
+              <Link href='#top' scroll={false}>
                 <ArrowUpIcon className='w-5 h-5 ml-2' aria-hidden='true' />
-              </a>
+              </Link>
             </button>
           </Tooltip>
         </div>
