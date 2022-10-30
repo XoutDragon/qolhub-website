@@ -108,13 +108,23 @@
   {
     "id": "skyblockclient",
     "name": "SkyblockClient",
-    "developers": "Harry282#1031",
+    "developers": "Harry282",
     "paid": false,
     "icon": "https://imgur.com/I6Hc9v5.png",
     "github": "https://github.com/Harry282/Skyblock-Client",
     "website": "https://harry282.github.io/Skyblock-Client/",
     "discord": "https://discord.gg/kdpfG2tmVD",
     "tags": ["skyblock", "cheats"]
+  },
+  {
+    "id": "egom-scripts",
+    "name": "Egom Scripts",
+    "developers": "Egom",
+    "paid": true,
+    "price": "$10.00",
+    "icon": "https://imgur.com/tFr7ulW.png",
+    "discord": "https://discord.gg/K7jg34Nv2N",
+    "tags": ["skyblock", "cheats", "paid"]
   },
   {
     "id": "nekoqol",

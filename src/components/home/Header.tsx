@@ -43,13 +43,13 @@ export default function Header() {
             <li>
               <Link
                 href='/'
-                className={`text-xl font-bold ${
+                className={`text-lg font-bold ${
                   onHomePage
                     ? 'text-gray-700 cursor-default'
                     : 'text-blue-700 opacity-75 hover:opacity-100'
                 } `}
               >
-                <HomeIcon className='inline-block mr-1 -translate-y-1 w-6' />
+                <HomeIcon className='inline-block mr-1 -translate-y-1 w-5' />
                 Home
               </Link>
             </li>

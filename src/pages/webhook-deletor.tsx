@@ -46,7 +46,7 @@ export default function WebhookDeletor() {
               </div>
               <div className='grid grid-cols-2 gap-x-2 mt-4'>
                 <button
-                  className='bg-red-600 py-3 px-6 rounded-lg h-full my-auto opacity-80 hover:opacity-100 shadow-lg'
+                  className='bg-red-600 py-3 px-6 rounded-lg my-auto opacity-80 hover:opacity-100 shadow-lg'
                   onClick={() => {
                     setShowConfirmPanel(false);
                   }}
@@ -54,7 +54,7 @@ export default function WebhookDeletor() {
                   Cancel
                 </button>
                 <button
-                  className='bg-green-600 py-3 px-6 rounded-lg h-full my-auto opacity-80 hover:opacity-100 shadow-lg'
+                  className='bg-green-600 py-3 px-6 rounded-lg my-auto opacity-80 hover:opacity-100 shadow-lg'
                   onClick={() => {
                     deleteWebhook();
                     setShowConfirmPanel(false);

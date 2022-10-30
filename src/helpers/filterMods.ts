@@ -10,7 +10,8 @@ import cheats from '../data/cheats.json';
 export const filterMods = (
   filter: string,
   enableCheats: boolean,
-  enablePaid: boolean
+  enablePaid: boolean,
+  discontinued: boolean
 ) => {
   // Filter mods by name
   const modsFiltered = mods.filter((mod) =>
@@ -44,13 +45,23 @@ export const filterMods = (
     return 0;
   });
 
+  // Filter mods by discontinued
+  const discontinuedFiltered = discontinued
+    ? modsFiltered
+    : modsFiltered.filter((mod) => !mod.tags.includes('discontinued'));
+  const discontinuedCheatsFiltered = discontinued
+    ? cheatsFiltered
+    : cheatsFiltered.filter(
+        (cheat: any) => !cheat.tags.includes('discontinued')
+      );
+
   // Filter mods by paid
   const paidFiltered = enablePaid
-    ? modsFiltered
-    : modsFiltered.filter((mod: any) => !mod.paid);
+    ? discontinuedFiltered
+    : discontinuedFiltered.filter((mod: any) => !mod.paid);
   const paidCheatsFiltered = enablePaid
-    ? cheatsFiltered
-    : cheatsFiltered.filter((mod: any) => !mod.paid);
+    ? discontinuedCheatsFiltered
+    : discontinuedCheatsFiltered.filter((mod: any) => !mod.paid);
 
   // Filters all the mods
   const allMods = paidFiltered.concat(paidCheatsFiltered).sort((a, b) => {

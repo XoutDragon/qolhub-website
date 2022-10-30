@@ -92,8 +92,8 @@
     "tags": ["skyblock"]
   },
   {
-    "id": "dungeon-guide",
-    "name": "Dungeon Guide",
+    "id": "dungeons-guide",
+    "name": "Dungeons Guide",
     "developers": "cyoung06",
     "paid": false,
     "icon": "https://avatars.githubusercontent.com/u/87838487",

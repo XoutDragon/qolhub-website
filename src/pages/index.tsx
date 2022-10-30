@@ -16,21 +16,35 @@ export default function Home() {
   const [enableCheats, setCheats] = useState(false);
   const [filter, setFilter] = useState('');
   const [enablePaid, setPaid] = useState(true);
+  const [discontinued, setDiscontinued] = useState(false);
 
-  const cheatText = enableCheats ? 'Hide Cheats' : 'Show Cheats';
-  const cheatColor = !enableCheats ? 'border-green-600' : 'border-red-600';
-  const cheatBGColor = !enableCheats
+  const cheatText = enableCheats
+    ? 'Show Cheats: Enabled'
+    : 'Show Cheats: Disabled';
+  const cheatColor = enableCheats ? 'border-green-600' : 'border-red-600';
+  const cheatBGColor = enableCheats ? 'hover:bg-green-600' : 'hover:bg-red-600';
+
+  const paidText = enablePaid ? 'Show Paid: Enabled' : 'Show Paid: Disabled';
+  const paidColor = enablePaid ? 'border-green-600' : 'border-red-600';
+  const paidBGColor = enablePaid ? 'hover:bg-green-600' : 'hover:bg-red-600';
+
+  const discontinuedText = discontinued
+    ? 'Show Discontinued: Enabled'
+    : 'Show Discontinued: Disabled';
+  const discontinuedColor = discontinued
+    ? 'border-green-600'
+    : 'border-red-600';
+  const discontinuedBGColor = discontinued
     ? 'hover:bg-green-600'
     : 'hover:bg-red-600';
 
-  const paidText = enablePaid ? 'Hide Paid' : 'Show Paid';
-  const paidColor = !enablePaid ? 'border-green-600' : 'border-red-600';
-  const paidBGColor = !enablePaid ? 'hover:bg-green-600' : 'hover:bg-red-600';
-
-  const allMods: any = filterMods(filter, enableCheats, enablePaid);
+  const allMods: any = filterMods(
+    filter,
+    enableCheats,
+    enablePaid,
+    discontinued
+  );
   const modList: any = ModCard(allMods);
-
-  const [hideSettings, setHideSettings] = useState(false);
 
   return (
     <div className='h-screen scrollbar-thin scrollbar-thumb-rounded-md scrollbar-thumb-blue-600 dark:scrollbar-track-gray-900'>
@@ -58,18 +72,19 @@ export default function Home() {
         </div>
         <div className='justify-center md:flex text-xs sm:text-lg'>
           <div
-            className={`text-center mt-4 flex justify-evenly md:grid md:grid-cols-3 gap-4`}
+            className={`text-center mt-4 flex justify-evenly md:grid md:grid-cols-4 gap-2`}
           >
-            <a href='https://discord.gg/qolhub'>
-              <button className='bg-blue-700 py-3 px-6 rounded-lg h-full my-auto opacity-80 hover:opacity-100 shadow-lg'>
-                <FaDiscord
-                  className={`inline-block mr-3 w-6 translate-y-[-3px]`}
-                />
-                Join Discord
-              </button>
+            <a
+              href='https://discord.gg/qolhub'
+              className='bg-blue-700 p-3 rounded-lg h-full my-auto opacity-80 hover:opacity-100 shadow-lg'
+            >
+              <FaDiscord
+                className={`inline-block mr-3 w-6 translate-y-[-3px]`}
+              />
+              Join Discord
             </a>
             <button
-              className={`py-3 px-6 border-2 ${cheatColor} rounded-lg shadow-lg ${cheatBGColor} hidden md:block`}
+              className={`py-3 border-2 ${cheatColor} rounded-lg shadow-lg ${cheatBGColor} hidden md:block`}
               onClick={(_e) => {
                 setCheats(!enableCheats);
               }}
@@ -77,28 +92,32 @@ export default function Home() {
               {cheatText}
             </button>
             <button
-              className={`py-3 px-6 border-2 ${paidColor} rounded-lg shadow-lg ${paidBGColor} hidden md:block`}
+              className={`py-3 border-2 ${paidColor} rounded-lg shadow-lg ${paidBGColor} hidden md:block`}
               onClick={(_e) => {
                 setPaid(!enablePaid);
               }}
             >
               {paidText}
             </button>
+            <button
+              className={`py-3 px-6 border-2 ${discontinuedColor} rounded-lg shadow-lg ${discontinuedBGColor} hidden md:block`}
+              onClick={(_e) => {
+                setDiscontinued(!discontinued);
+              }}
+            >
+              {discontinuedText}
+            </button>
             <div className='md:hidden'>
               <Popover>
                 {({ open }) => (
                   <>
-                    <Popover.Button
-                      onMouseEnter={() => {
-                        setHideSettings(true);
-                      }}
-                    >
+                    <Popover.Button>
                       <BsGearFill className={`text-3xl translate-y-1`} />
                     </Popover.Button>
                     {open && (
                       <Popover.Panel static>
                         {({ close }) => (
-                          <div className='fixed z-10 w-full px-4 ml-0 -mt-12 transform -translate-x-1/2 rounded-md bg-black min-h-72 left-1/2 opacity-75'>
+                          <div className='fixed z-10 w-full px-4 ml-0 -mt-16 transform -translate-x-1/2 rounded-md bg-black min-h-72 left-1/2 opacity-75'>
                             <div className='py-5 justify-between flex'>
                               <div className='text-center text-3xl'>
                                 Settings
@@ -106,7 +125,6 @@ export default function Home() {
                               <div>
                                 <button
                                   onClick={async () => {
-                                    setHideSettings(false);
                                     close();
                                   }}
                                 >
@@ -114,7 +132,7 @@ export default function Home() {
                                 </button>
                               </div>
                             </div>
-                            <div className='grid grid-rows-2 gap-6'>
+                            <div className='grid grid-rows-3 gap-3'>
                               <div>
                                 <button
                                   className={`py-3 px-6 border-2 ${cheatColor} rounded-lg shadow-lg ${cheatBGColor} w-full`}
@@ -133,6 +151,26 @@ export default function Home() {
                                   }}
                                 >
                                   {paidText}
+                                </button>
+                              </div>
+                              <div>
+                                <button
+                                  className={`py-3 px-6 border-2 ${discontinuedColor} rounded-lg shadow-lg ${discontinuedBGColor} w-full`}
+                                  onClick={(_e) => {
+                                    setDiscontinued(!discontinued);
+                                  }}
+                                >
+                                  {discontinuedText}
+                                </button>
+                              </div>
+                              <div>
+                                <button
+                                  className={`py-3 px-6 border-2 ${discontinuedColor} rounded-lg shadow-lg ${discontinuedBGColor} hidden md:block`}
+                                  onClick={(_e) => {
+                                    setDiscontinued(!discontinued);
+                                  }}
+                                >
+                                  {discontinuedText}
                                 </button>
                               </div>
                             </div>
