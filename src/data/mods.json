@@ -14,7 +14,7 @@
     "id": "skytils",
     "name": "Skytils",
     "discord": "discord.gg/skytils",
-    "developers": "Sychic#5005, lily💕#0999",
+    "developers": "Sychic, lily",
     "paid": false,
     "icon": "https://avatars.githubusercontent.com/u/78452287",
     "github": "https://github.com/Skytils/SkytilsMod/releases",
@@ -33,7 +33,7 @@
     "id": "skyblockaddons",
     "name": "Skyblock Addons",
     "discord": "https://discord.gg/FvhWJH2b5b",
-    "developers": "Biscuit#1111",
+    "developers": "Biscuit",
     "paid": false,
     "icon": "https://avatars.githubusercontent.com/u/56459009",
     "website": "https://biscuit.codes/mods/skyblockaddons/",
@@ -43,7 +43,7 @@
   {
     "id": "soopyv2",
     "name": "SoopyV2",
-    "developers": "Soopyboo32#3042",
+    "developers": "Soopyboo32",
     "paid": false,
     "icon": "https://imgur.com/xj03fye.png",
     "github": "https://github.com/Soopyboo32/SoopyV2",
@@ -55,7 +55,7 @@
     "id": "notenoughupdates",
     "name": "NotEnoughUpdates",
     "discord": "https://discord.gg/moulberry",
-    "developers": "Moulberry#0001",
+    "developers": "Moulberry",
     "paid": false,
     "icon": "https://avatars.githubusercontent.com/u/12858993",
     "github": "https://github.com/Moulberry/NotEnoughUpdates",
@@ -65,7 +65,7 @@
   {
     "id": "hychat",
     "name": "Hychat",
-    "developers": "Moulberry#0001",
+    "developers": "Moulberry",
     "discord": "https://discord.gg/moulberry",
     "paid": false,
     "icon": "https://avatars.githubusercontent.com/u/12858993",
@@ -75,7 +75,7 @@
   {
     "id": "hyaddons",
     "name": "HyAddons",
-    "developers": "jerome#1028",
+    "developers": "jxxe",
     "paid": false,
     "icon": "https://avatars.githubusercontent.com/u/86937238",
     "github": "https://github.com/HyAddons/HyAddons",
@@ -84,7 +84,7 @@
   {
     "id": "cowlection",
     "name": "Cowlection",
-    "developers": "Cow#1336",
+    "developers": "cow-mc",
     "paid": false,
     "icon": "https://cowtipper.de/images/cow.svg",
     "github": "https://github.com/cow-mc/Cowlection",
@@ -95,7 +95,7 @@
   {
     "id": "dungeon-guide",
     "name": "Dungeon Guide",
-    "developers": "syeyoung#3876",
+    "developers": "cyoung06",
     "paid": false,
     "icon": "https://avatars.githubusercontent.com/u/87838487",
     "github": "https://github.com/Dungeons-Guide/Skyblock-Dungeons-Guide",
@@ -105,7 +105,7 @@
   {
     "id": "skyblockpersonalized",
     "name": "SkyblockPersonalized",
-    "developers": "Cobble8#0881",
+    "developers": "Cobble8",
     "paid": false,
     "icon": "https://imgur.com/wX0IedV.png",
     "github": "https://github.com/Cobble8/SkyblockPersonalized",
@@ -115,7 +115,7 @@
   {
     "id": "dungeon-rooms-mod",
     "name": "Dungeon Rooms Mod",
-    "developers": "_risk#2091",
+    "developers": "Quantizr",
     "paid": false,
     "icon": "https://imgur.com/ydVHMVv.png",
     "github": "https://github.com/Quantizr/DungeonRoomsMod",
@@ -126,7 +126,7 @@
   {
     "id": "dankers-skyblock-mod",
     "name": "Danker's Skyblock Mod",
-    "developers": "DankerWanker (2D > 3D)#4544",
+    "developers": "bowser0000",
     "paid": false,
     "icon": "https://imgur.com/j2Pwf3n.png",
     "github": "https://github.com/bowser0000/SkyblockMod",
@@ -136,7 +136,7 @@
   {
     "id": "sk1er-mods",
     "name": "Sk1er Mods",
-    "developers": "Sk1er#1030",
+    "developers": "Sk1er",
     "paid": false,
     "icon": "https://imgur.com/YhHaso1.png",
     "github": "https://github.com/Sk1er",
@@ -158,7 +158,7 @@
   {
     "id": "bloommodule",
     "name": "BloomModule",
-    "developers": "Unclaimed#6151",
+    "developers": "UnclaimedBloom6",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
     "github": "https://github.com/UnclaimedBloom6/BloomModule",
     "tags": ["skyblock"]
