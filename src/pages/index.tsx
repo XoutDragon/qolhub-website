@@ -58,9 +58,7 @@ export default function Home() {
         </div>
         <div className='justify-center md:flex text-xs sm:text-lg'>
           <div
-            className={`text-center mt-4 ${
-              hideSettings ? 'block' : 'flex'
-            } justify-evenly md:grid md:grid-cols-3 gap-4`}
+            className={`text-center mt-4 flex justify-evenly md:grid md:grid-cols-3 gap-4`}
           >
             <a href='https://discord.gg/qolhub'>
               <button className='bg-blue-700 py-3 px-6 rounded-lg h-full my-auto opacity-80 hover:opacity-100 shadow-lg'>
@@ -95,11 +93,7 @@ export default function Home() {
                         setHideSettings(true);
                       }}
                     >
-                      <BsGearFill
-                        className={`text-3xl translate-y-1 ${
-                          hideSettings ? 'hidden' : ''
-                        }`}
-                      />
+                      <BsGearFill className={`text-3xl translate-y-1`} />
                     </Popover.Button>
                     {open && (
                       <Popover.Panel static>
