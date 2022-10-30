@@ -2,7 +2,7 @@
   {
     "id": "pizza-client",
     "name": "Pizza Client",
-    "developers": "🍕🍕#0001",
+    "developers": "PizzaboiBestLegit",
     "paid": true,
     "price": "14.99",
     "icon": "https://imgur.com/aXJ0Nt4.png",
@@ -13,7 +13,7 @@
   {
     "id": "oringo-client",
     "name": "Oringo Client",
-    "developers": "Oringo#5954",
+    "developers": "Oringo",
     "paid": true,
     "price": "10.99",
     "icon": "https://imgur.com/8S95QYM.png",
@@ -23,7 +23,7 @@
   {
     "id": "funnymap",
     "name": "FunnyMap",
-    "developers": "Harry282#1031",
+    "developers": "Harry282",
     "paid": false,
     "icon": "https://imgur.com/I6Hc9v5.png",
     "discord": "https://discord.gg/kdpfG2tmVD",
@@ -33,7 +33,7 @@
   {
     "id": "funnymapextras",
     "name": "FunnyMapExtras",
-    "developers": "Harry282#1031",
+    "developers": "Harry282",
     "paid": true,
     "price": "8.00",
     "icon": "https://imgur.com/I6Hc9v5.png",
@@ -44,7 +44,7 @@
   {
     "id": "illegal-map",
     "name": "Illegal Map",
-    "developers": "Unclaimed#6151",
+    "developers": "UnclaimedBloom6",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
     "github": "https://github.com/UnclaimedBloom6/IllegalMap",
     "tags": ["skyblock", "cheats"]
@@ -52,7 +52,7 @@
   {
     "id": "randomstuff",
     "name": "RandomStuff",
-    "developers": "Unclaimed#6151",
+    "developers": "UnclaimedBloom6",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
     "github": "https://github.com/UnclaimedBloom6/RandomStuff",
     "tags": ["skyblock", "cheats"]
@@ -60,7 +60,7 @@
   {
     "id": "cheeto-client",
     "name": "Cheeto Client",
-    "developers": "Apfelsaft#0002",
+    "developers": "Apfelsaft",
     "paid": false,
     "icon": "https://imgur.com/WnRwpl3.png",
     "discord": "https://discord.gg/chromahud",
@@ -69,7 +69,7 @@
   {
     "id": "cheeto-sigma",
     "name": "Cheeto Sigma",
-    "developers": "Apfelsaft#0002",
+    "developers": "Apfelsaft",
     "paid": true,
     "price": "9.99",
     "icon": "https://imgur.com/WnRwpl3.png",
@@ -79,7 +79,7 @@
   {
     "id": "shadyaddons",
     "name": "ShadyAddons",
-    "developers": "jerome#1028",
+    "developers": "jxxe",
     "paid": false,
     "icon": "https://avatars.githubusercontent.com/u/96850302",
     "github": "https://github.com/ShadyAddons",
@@ -90,7 +90,7 @@
   {
     "id": "hael9",
     "name": "Hael9",
-    "developers": "hael9#7011",
+    "developers": "hael9",
     "paid": false,
     "icon": "https://imgur.com/j2Pwf3n.png",
     "discord": "https://discord.gg/qolhub",
@@ -99,16 +99,16 @@
   {
     "id": "rosegoldaddons",
     "name": "RoseGoldAddons",
-    "developers": "RoseGold#5441",
+    "developers": "RoseGold",
     "paid": false,
     "icon": "https://avatars.githubusercontent.com/u/76526946",
     "github": "https://github.com/RoseGoldIsntGay/RGA",
     "tags": ["skyblock", "cheats", "discontinued"]
   },
   {
-    "id": "skyblockclient",
-    "name": "SkyblockClient",
-    "developers": "Harry282#1031",
+    "id": "skyblock-client",
+    "name": "Skyblock Client",
+    "developers": "Harry282",
     "paid": false,
     "icon": "https://imgur.com/I6Hc9v5.png",
     "github": "https://github.com/Harry282/Skyblock-Client",
@@ -119,7 +119,7 @@
   {
     "id": "nekoqol",
     "name": "NekoQOL",
-    "developers": "Azael#0315, SemiMute#6630",
+    "developers": "Azael, SemiMute",
     "paid": false,
     "icon": "https://avatars.githubusercontent.com/u/66936848",
     "github": "https://github.com/AzaelMew/NekoQOL",
@@ -128,7 +128,7 @@
   {
     "id": "skyskipped",
     "name": "SkySkipped",
-    "developers": "Cephetir#3793",
+    "developers": "Cephetir",
     "paid": false,
     "icon": "https://avatars.githubusercontent.com/u/62209929",
     "github": "https://github.com/Cephetir/SkySkipped",
@@ -138,7 +138,7 @@
   {
     "id": "jellylab",
     "name": "JellyLab",
-    "developers": "JellyLab#0733",
+    "developers": "JellyLab",
     "paid": false,
     "icon": "https://imgur.com/j1aY6nR.png",
     "discord": "https://discord.gg/MQwnhskNBD",
@@ -148,7 +148,7 @@
   {
     "id": "binmaster",
     "name": "binmaster",
-    "developers": "aesthetic#0453",
+    "developers": "aesthetic",
     "paid": true,
     "price": "30.00",
     "icon": "https://imgur.com/HlPHBJA.png",
@@ -159,7 +159,7 @@
   {
     "id": "enderflame-scripts",
     "name": "EnderFlame Scripts",
-    "developers": "EnderFlame#6459",
+    "developers": "EnderFlame",
     "paid": true,
     "price": "20.00",
     "icon": "https://imgur.com/t2t9VwI.png",

@@ -4,134 +4,31 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Footer from '../components/home/Footer';
 import Header from '../components/home/Header';
-import {
-  FaDiscord,
-  FaGlobe,
-  FaGithub,
-  FaExclamationTriangle,
-} from 'react-icons/fa';
 import { useState } from 'react';
-import mods from '../data/mods.json';
-import cheats from '../data/cheats.json';
+import { filterMods } from '../helpers/filterMods';
+import { FaExclamationTriangle, FaDiscord } from 'react-icons/fa';
+import { BsGearFill } from 'react-icons/bs';
+import { ModCard } from '../components/modCard';
+import { IoClose } from 'react-icons/io5';
+import { Popover } from '@headlessui/react';
 
 export default function Home() {
   const [enableCheats, setCheats] = useState(false);
-  let cheatText = enableCheats
-    ? 'Show Cheats: Enabled'
-    : 'Show Cheats: Disabled';
-  let cheatColor = enableCheats ? 'border-green-600' : 'border-red-500';
   const [filter, setFilter] = useState('');
+  const [enablePaid, setPaid] = useState(true);
 
-  const modsFiltered = mods.filter((mod) =>
-    mod.name.toLowerCase().includes(filter.toLowerCase())
-  );
+  const cheatText = enableCheats ? 'Show Cheats' : 'Hide Cheats';
+  const cheatColor = enableCheats ? 'border-green-600' : 'border-red-600';
+  const cheatBGColor = enableCheats ? 'hover:bg-green-600' : 'hover:bg-red-600';
 
-  modsFiltered.sort((a, b) => {
-    if (a.name.toLowerCase() < b.name.toLowerCase()) {
-      return -1;
-    }
-    if (a.name.toLowerCase() > b.name.toLowerCase()) {
-      return 1;
-    }
-    return 0;
-  });
+  const paidText = enablePaid ? 'Show Paid' : 'Hide Paid';
+  const paidColor = enablePaid ? 'border-green-600' : 'border-red-600';
+  const paidBGColor = enablePaid ? 'hover:bg-green-600' : 'hover:bg-red-600';
 
-  const cheatsFiltered: any = enableCheats
-    ? cheats.filter((cheat) =>
-        cheat.name.toLowerCase().includes(filter.toLowerCase())
-      )
-    : [];
+  const allMods: any = filterMods(filter, enableCheats, enablePaid);
+  const modList: any = ModCard(allMods);
 
-  cheatsFiltered.sort((a: any, b: any) => {
-    if (a.name.toLowerCase() < b.name.toLowerCase()) {
-      return -1;
-    }
-    if (a.name.toLowerCase() > b.name.toLowerCase()) {
-      return 1;
-    }
-    return 0;
-  });
-
-  const allMods = modsFiltered.concat(cheatsFiltered).sort((a, b) => {
-    if (a.name.toLowerCase() < b.name.toLowerCase()) {
-      return -1;
-    }
-    if (a.name.toLowerCase() > b.name.toLowerCase()) {
-      return 1;
-    }
-    return 0;
-  });
-
-  const modList = allMods.map((mod: any, i) => (
-    <div key={mod.id} className=''>
-      <div
-        className={`${
-          mod.tags.includes('cheats')
-            ? 'bg-gradient-to-r from-red-600 to-yellow-500'
-            : 'bg-gradient-to-r from-green-600 to-blue-700 '
-        } p-4 lg:px-6 lg:pt-6 lg:pb-4 rounded-t-3xl flex justify-between`}
-      >
-        <div className=''>
-          <img
-            src={mod.icon}
-            alt={`${mod.name} Image`}
-            className={`w-16 h-16 rounded-3xl`}
-          />
-        </div>
-        <div className='text-lg max-w-xss sm:max-w-none sm:text-2xl align-center h-full my-auto text-right'>
-          {mod.name}
-        </div>
-      </div>
-      <div className='bg-black px-8 py-4 rounded-b-3xl shadow-2xl shadow-black min-h-64'>
-        <div className='mb-4 min-h-12'>
-          <div>
-            Developer{mod.developers.split(', ').length > 1 ? 's' : ''}:{' '}
-            {mod.developers}{' '}
-          </div>
-          {mod.paid ? (
-            <div className='text-red-500'>Price: ${mod.price}</div>
-          ) : (
-            ''
-          )}
-        </div>
-        <div className='min-h-16'>
-          <div className='grid grid-cols-2 gap-x-6 gap-y-2'>
-            {mod.website ? (
-              <a href={mod.website} className='flex hover:opacity-70'>
-                <FaGlobe className='translate-y-1 mr-2' /> Website
-              </a>
-            ) : (
-              ''
-            )}
-            {mod.discord ? (
-              <a href={mod.discord} className='flex hover:opacity-70'>
-                <FaDiscord className='translate-y-1 mr-2' /> Discord
-              </a>
-            ) : (
-              ''
-            )}
-            {mod.github ? (
-              <a href={mod.github} className='flex hover:opacity-70'>
-                <FaGithub className='translate-y-1 mr-2' /> Github
-              </a>
-            ) : (
-              ''
-            )}
-          </div>
-        </div>
-        <div className='mt-5'>
-          {mod.tags.map((tag: string, i: number) => (
-            <span
-              key={i}
-              className='inline-block bg-gray-900 rounded-full px-3 py-1 text-sm font-semibold text-gray-400 mr-2 mb-2'
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-      </div>
-    </div>
-  ));
+  const [hideSettings, setHideSettings] = useState(false);
 
   return (
     <div className='h-screen scrollbar-thin scrollbar-thumb-rounded-md scrollbar-thumb-blue-600 dark:scrollbar-track-gray-900'>
@@ -158,21 +55,99 @@ export default function Home() {
           </div>
         </div>
         <div className='justify-center md:flex text-xs sm:text-lg'>
-          <div className='text-center mt-4 grid grid-cols-2 gap-4'>
+          <div
+            className={`text-center mt-4 ${
+              hideSettings ? 'block' : 'flex'
+            } justify-evenly md:grid md:grid-cols-3 gap-4`}
+          >
             <a href='https://discord.gg/qolhub'>
               <button className='bg-blue-700 py-3 px-6 rounded-lg h-full my-auto opacity-80 hover:opacity-100 shadow-lg'>
-                <FaDiscord className='inline-block mr-3 w-6 translate-y-[-3px]' />
-                Join our Discord
+                <FaDiscord
+                  className={`inline-block mr-3 w-6 translate-y-[-3px]`}
+                />
+                Join Discord
               </button>
             </a>
             <button
-              className={`py-3 px-6 border ${cheatColor} rounded-lg shadow-lg`}
+              className={`py-3 px-6 border-2 ${cheatColor} rounded-lg shadow-lg ${cheatBGColor} hidden md:block`}
               onClick={(_e) => {
                 setCheats(!enableCheats);
               }}
             >
               {cheatText}
             </button>
+            <button
+              className={`py-3 px-6 border-2 ${paidColor} rounded-lg shadow-lg ${paidBGColor} hidden md:block`}
+              onClick={(_e) => {
+                setPaid(!enablePaid);
+              }}
+            >
+              {paidText}
+            </button>
+            <div className='md:hidden'>
+              <Popover>
+                {({ open }) => (
+                  <>
+                    <Popover.Button
+                      onMouseEnter={() => {
+                        setHideSettings(true);
+                      }}
+                    >
+                      <BsGearFill
+                        className={`text-3xl translate-y-1 ${
+                          hideSettings ? 'hidden' : ''
+                        }`}
+                      />
+                    </Popover.Button>
+                    {open && (
+                      <Popover.Panel static>
+                        {({ close }) => (
+                          <div className='fixed z-10 w-full px-4 ml-0 -mt-12 transform -translate-x-1/2 rounded-md bg-black min-h-72 left-1/2 opacity-75'>
+                            <div className='py-5 justify-between flex'>
+                              <div className='text-center text-3xl'>
+                                Settings
+                              </div>
+                              <div>
+                                <button
+                                  onClick={async () => {
+                                    setHideSettings(false);
+                                    close();
+                                  }}
+                                >
+                                  <IoClose className='text-3xl translate-y-1' />{' '}
+                                </button>
+                              </div>
+                            </div>
+                            <div className='grid grid-rows-2 gap-6'>
+                              <div>
+                                <button
+                                  className={`py-3 px-6 border-2 ${cheatColor} rounded-lg shadow-lg ${cheatBGColor} w-full`}
+                                  onClick={(_e) => {
+                                    setCheats(!enableCheats);
+                                  }}
+                                >
+                                  {cheatText}
+                                </button>
+                              </div>
+                              <div>
+                                <button
+                                  className={`py-3 px-6 border-2 ${paidColor} rounded-lg shadow-lg ${paidBGColor} w-full`}
+                                  onClick={(_e) => {
+                                    setPaid(!enablePaid);
+                                  }}
+                                >
+                                  {paidText}
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                      </Popover.Panel>
+                    )}
+                  </>
+                )}
+              </Popover>
+            </div>
           </div>
         </div>
         <div className='relative mx-auto my-10 w-11/12 lg:w-1/2 '>
