@@ -18,12 +18,14 @@ export default function Home() {
   const [enablePaid, setPaid] = useState(true);
 
   const cheatText = enableCheats ? 'Hide Cheats' : 'Show Cheats';
-  const cheatColor = enableCheats ? 'border-green-600' : 'border-red-600';
-  const cheatBGColor = enableCheats ? 'hover:bg-green-600' : 'hover:bg-red-600';
+  const cheatColor = !enableCheats ? 'border-green-600' : 'border-red-600';
+  const cheatBGColor = !enableCheats
+    ? 'hover:bg-green-600'
+    : 'hover:bg-red-600';
 
   const paidText = enablePaid ? 'Hide Paid' : 'Show Paid';
-  const paidColor = enablePaid ? 'border-green-600' : 'border-red-600';
-  const paidBGColor = enablePaid ? 'hover:bg-green-600' : 'hover:bg-red-600';
+  const paidColor = !enablePaid ? 'border-green-600' : 'border-red-600';
+  const paidBGColor = !enablePaid ? 'hover:bg-green-600' : 'hover:bg-red-600';
 
   const allMods: any = filterMods(filter, enableCheats, enablePaid);
   const modList: any = ModCard(allMods);
