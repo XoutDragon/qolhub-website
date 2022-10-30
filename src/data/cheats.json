@@ -106,9 +106,9 @@
     "tags": ["skyblock", "cheats", "discontinued"]
   },
   {
-    "id": "skyblock-client",
-    "name": "Skyblock Client",
-    "developers": "Harry282",
+    "id": "skyblockclient",
+    "name": "SkyblockClient",
+    "developers": "Harry282#1031",
     "paid": false,
     "icon": "https://imgur.com/I6Hc9v5.png",
     "github": "https://github.com/Harry282/Skyblock-Client",

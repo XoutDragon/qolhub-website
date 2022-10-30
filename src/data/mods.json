@@ -22,7 +22,7 @@
   },
   {
     "id": "skyblockcatia",
-    "name": "Skyblockcatia",
+    "name": "Skyblock Catia",
     "developers": "SteveKunG",
     "paid": false,
     "icon": "https://media.forgecdn.net/avatars/288/186/637310718220929564.png",
@@ -59,7 +59,6 @@
     "paid": false,
     "icon": "https://avatars.githubusercontent.com/u/12858993",
     "github": "https://github.com/Moulberry/NotEnoughUpdates",
-    "website": "https://moulberry.codes",
     "tags": ["skyblock"]
   },
   {
@@ -135,8 +134,8 @@
   },
   {
     "id": "sk1er-mods",
-    "name": "Sk1er Mods",
-    "developers": "Sk1er",
+    "name": "Sk1ier Mods",
+    "developers": "Sk1er#1030",
     "paid": false,
     "icon": "https://imgur.com/YhHaso1.png",
     "github": "https://github.com/Sk1er",
