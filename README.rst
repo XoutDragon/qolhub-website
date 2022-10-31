@@ -18,6 +18,17 @@ How to Contribute
 
 Thanks to anyone who contributes!
 
+Info
+-------
+- Framework: NextJS
+- CSS: Tailwind
+- SVGs: react-icons
+- Host: Vercel
+
+Recommended VSC Extensions
+--------
+- Prettier (Single quotes please)
+- Tailwind Intellisense
 
 Features
 --------
