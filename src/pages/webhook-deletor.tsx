@@ -2,6 +2,7 @@ import Footer from '../components/home/Footer';
 import Header from '../components/home/Header';
 import { useState } from 'react';
 import axios from 'axios';
+import Head from 'next/head';
 
 export default function WebhookDeletor() {
   const [webhook, setWebhook] = useState('');
@@ -36,6 +37,16 @@ export default function WebhookDeletor() {
 
   return (
     <>
+      <Head>
+        <title>Webhook Deletor</title>
+        <meta
+          name='description'
+          content='Official Quality of Life Website
+        - Webhook Deletor'
+        />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
+
       <div className='h-screen scrollbar-thin scrollbar-thumb-rounded-md scrollbar-thumb-blue-600 dark:scrollbar-track-gray-900'>
         <Header />
         {showConfirmPanel ? (
