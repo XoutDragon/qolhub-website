@@ -51,7 +51,7 @@ export default function WebhookDeletor() {
         <Header />
         {showConfirmPanel ? (
           <div className='absolute h-full w-full z-10 px-5'>
-            <div className='flex flex-col justify-center items-center translate-y-[120%] bg-blue-700 opacity-95 rounded-md py-3'>
+            <div className='flex flex-col justify-center items-center translate-y-[120%] bg-gray-500 border-2 border-gray-800 opacity-95 rounded-md py-3'>
               <div className='text-lg md:text-2xl text-center'>
                 Are you sure you want to delete this webhook?
               </div>
