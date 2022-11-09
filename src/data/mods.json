@@ -1,5 +1,13 @@
 [
   {
+    "id": "aliaddons",
+    "name": "AliAddons",
+    "discord": "https://discord.gg/ubvBzRUx3w",
+    "developers": "Alifarce",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+    "tags": ["skyblock"]
+  },
+  {
     "id": "skyblock-extras",
     "name": "Skyblock Extras",
     "discord": "discord.gg/sbe",
