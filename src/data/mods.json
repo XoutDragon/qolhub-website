@@ -1,5 +1,16 @@
 [
   {
+    "id": "chattriggers",
+    "name": "ChatTriggers",
+    "discord": "discord.gg/chattriggers",
+    "developers": "FalseHonesty, Ecolsson, kerbybit",
+    "paid": false,
+    "icon": "https://imgur.com/a/9p1SlZt",
+    "website": "https://www.chattriggers.com",
+    "github": "https://github.com/ChatTriggers/ChatTriggers",
+    "tags": ["ct"]
+  },
+  {
     "id": "TEM",
     "name": "The Exotics Mod",
     "discord": "https://discord.gg/zkTSE6r6xV",
@@ -89,7 +100,7 @@
     "github": "https://github.com/Soopyboo32/SoopyV2",
     "discord": "https://discord.com/invite/dfSMq96RSN",
     "website": "https://soopy.dev",
-    "tags": ["skyblock"]
+    "tags": ["skyblock", "ct"]
   },
   {
     "id": "notenoughupdates",
@@ -200,6 +211,6 @@
     "developers": "UnclaimedBloom6",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
     "github": "https://github.com/UnclaimedBloom6/BloomModule",
-    "tags": ["skyblock"]
+    "tags": ["skyblock", "ct"]
   }
 ]
