@@ -56,7 +56,7 @@
     "developers": "UnclaimedBloom6",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
     "github": "https://github.com/UnclaimedBloom6/IllegalMap",
-    "tags": ["skyblock", "cheats"]
+    "tags": ["skyblock", "cheats", "ct"]
   },
   {
     "id": "randomstuff",
@@ -64,7 +64,7 @@
     "developers": "UnclaimedBloom6",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
     "github": "https://github.com/UnclaimedBloom6/RandomStuff",
-    "tags": ["skyblock", "cheats"]
+    "tags": ["skyblock", "cheats", "ct"]
   },
   {
     "id": "cheeto-client",
@@ -142,7 +142,7 @@
     "paid": false,
     "icon": "https://avatars.githubusercontent.com/u/66936848",
     "github": "https://github.com/AzaelMew/NekoQOL",
-    "tags": ["skyblock", "cheats", "discontinued"]
+    "tags": ["skyblock", "cheats", "ct"]
   },
   {
     "id": "skyskipped",
