@@ -9,7 +9,7 @@
     "icon": "https://imgur.com/6wFW1NY.png",
     "website": "https://sky.coflnet.com/?refId=QYMeyQ",
     "github": "https://github.com/Coflnet/SkyblockMod/",
-    "tags": ["skyblock"]
+    "tags": ["skyblock", "paid"]
   },
   {
     "id": "TFM",
@@ -19,7 +19,7 @@
     "paid": true,
     "price": "2.00 - ~4.00",
     "icon": "https://imgur.com/J3uqTAm.png",
-    "tags": ["skyblock"]
+    "tags": ["skyblock", "paid"]
   }, 
   {
     "id": "aliaddons",
