@@ -1,5 +1,15 @@
 [
   {
+    "id": "TEM",
+    "name": "The Exotics Mod",
+    "discord": "https://discord.gg/zkTSE6r6xV",
+    "developers": "TGWaffles, Orenico",
+    "paid": false,
+    "icon": "https://imgur.com/VBYqhUB.png",
+    "website": "https://tem.cx/",
+    "tags": ["skyblock"]
+  },
+  {
     "id": "CoflSky",
     "name": "CoflSky",
     "discord": "https://discord.gg/JMTCGTTN3S",
