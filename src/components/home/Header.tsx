@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { MenuIcon, XIcon, HomeIcon } from '@heroicons/react/solid';
 import { FaGithub } from 'react-icons/fa';
-import { TbWebhook } from 'react-icons/tb';
+import { TbWebhook, TbTrophy } from 'react-icons/tb';
 import { Popover } from '@headlessui/react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -38,7 +38,7 @@ export default function Header() {
             </div>
           </Link>
         </div>
-        <div className='text-center md:w-3/5 xl:w-2/5 translate-y-4 border-b border-blue-500 max-h-10 rounded-bl-lg hidden md:block'>
+        <div className='text-center md:w-3/5 2xl:w-2/5 translate-y-4 border-b border-blue-500 max-h-10 rounded-bl-lg hidden md:block'>
           <ul className='flex justify-evenly'>
             <li>
               <Link
@@ -72,6 +72,12 @@ export default function Header() {
                 <span className='inline-block'>Github</span>
               </a>
             </li>
+            <li className='text-xl font-bold text-blue-700 opacity-75 hover:opacity-100'>
+              <a href='https://guildleaderboard.com'>
+                <TbTrophy className='inline-block mr-1 text-2xl -translate-y-1' />
+                <span className='inline-block'>Guild Leaderboards</span>
+              </a>
+            </li>
           </ul>
         </div>
         {/* Mobile Menu */}
@@ -87,7 +93,7 @@ export default function Header() {
                   <div className=''>
                     <Popover.Panel
                       static
-                      className='fixed z-10 px-4 ml-0 -mt-12 transform -translate-x-1/2 rounded-md bg-gray-900 min-h-72 first-line:px-0 left-1/2 w-11/12'
+                      className='fixed z-10 px-4 ml-0 -mt-12 transform -translate-x-1/2 rounded-md bg-gray-900 min-h-80 first-line:px-0 left-1/2 w-11/12'
                     >
                       {({ close }) => (
                         <div className=''>
@@ -111,7 +117,7 @@ export default function Header() {
                               <XIcon className='w-6 h-6' aria-hidden='true' />
                             </button>
                           </div>
-                          <ul className='w-full font-medium mt-10'>
+                          <ul className='w-full font-medium mt-10 flex-col space-y-2'>
                             <li>
                               <Link
                                 href='/'
@@ -145,6 +151,14 @@ export default function Header() {
                                 <FaGithub className='inline-block mr-3 text-3xl -translate-y-1' />
                                 <span className='inline-block text-2xl'>
                                   Github
+                                </span>
+                              </a>
+                            </li>
+                            <li className='text-xl font-bold text-blue-700 opacity-75 hover:opacity-100 mt-1'>
+                              <a href='https://guildleaderboard.com'>
+                                <TbTrophy className='inline-block mr-3 text-3xl -translate-y-1' />
+                                <span className='inline-block text-xl'>
+                                  Guild Leaderboards
                                 </span>
                               </a>
                             </li>
