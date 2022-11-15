@@ -212,5 +212,15 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
     "github": "https://github.com/UnclaimedBloom6/BloomModule",
     "tags": ["skyblock", "ct"]
-  }
+  },
+  {
+    "id": "guildleaderboard",
+    "name": "GuildLeaderboard",
+    "developers": "timnoot, XoutDragon",
+    "paid": false,
+    "icon": "https://guildleaderboard.com/logo459.png",
+    "website": "https://guildleaderboard.com/",
+    "discord": "https://discord.gg/ej92B474Ej",
+    "tags": ["website", "skyblock"]
+  },
 ]
