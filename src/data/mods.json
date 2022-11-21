@@ -1,5 +1,15 @@
 [
   {
+    "id": "patcher",
+    "name": "Patcher",
+    "discord": "https://discord.gg/sk1er",
+    "developers": "Sk1er",
+    "paid": false,
+    "icon": "https://imgur.com/YhHaso1.png",
+    "website": "https://sk1er.club/mods/patcher",
+    "tags": ["fps"]
+  },
+  {
     "id": "chattriggers",
     "name": "ChatTriggers",
     "discord": "discord.gg/chattriggers",
