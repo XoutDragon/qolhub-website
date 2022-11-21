@@ -1,4 +1,34 @@
-{
+[
+  {
+    "id": "canebuilder",
+    "name": "CaneBuilder",
+    "discord": "https://discord.gg/MQwnhskNBD",
+    "developers": "JellyLab",
+    "paid": false,
+    "icon": "https://imgur.com/j1aY6nR.png",
+    "github": "https://github.com/JellyLabScripts/CaneBuilder",
+    "tags": ["skyblock", "cheats"]
+  },
+  {
+    "id": "mightyminer",
+    "name": "MightyMiner",
+    "discord": "https://discord.gg/MQwnhskNBD",
+    "developers": "JellyLab",
+    "paid": false,
+    "icon": "https://imgur.com/j1aY6nR.png",
+    "github": "https://github.com/JellyLabScripts/MightyMiner",
+    "tags": ["skyblock", "cheats"]
+  },
+  {
+    "id": "jellylab-farmhelper",
+    "name": "FarmHelper",
+    "discord": "discord.gg/MQwnhskNBD",
+    "developers": "JellyLab, TrashyPanda, May2Bee",
+    "paid": false,
+    "icon": "https://imgur.com/j1aY6nR.png",
+    "github": "https://github.com/JellyLabScripts/FarmHelper"
+    "tags": ["skyblock", "cheats"]
+  },
   {
     "id": "pizza-client",
     "name": "Pizza Client",
@@ -152,7 +182,7 @@
     "paid": false,
     "icon": "https://imgur.com/j1aY6nR.png",
     "discord": "https://discord.gg/MQwnhskNBD",
-    "github": "https://github.com/Jelly298",
+    "github": "https://github.com/JellyLabScripts",
     "tags": ["skyblock", "cheats"]
   },
   {
