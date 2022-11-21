@@ -1,13 +1,4 @@
-[
-  {
-    "id": "jellylab-farmhelper",
-    "name": "Farm Helper",
-    "discord": "discord.gg/jellylab",
-    "developers": "JellyLab, TrashyPanda, May2Bee",
-    "icon": "https://imgur.com/j1aY6nR.png",
-    "github": "https://github.com/Jelly298",
-    "tags": ["skyblock", "cheats"]
-  },
+{
   {
     "id": "pizza-client",
     "name": "Pizza Client",
