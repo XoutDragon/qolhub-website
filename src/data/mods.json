@@ -1,4 +1,95 @@
-[
+[ 
+  {
+    "id": "togglechat",
+    "name": "ToggleChat",
+    "developers": "boomboompower",
+    "paid": false,
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+    "github": "https://github.com/boomboompower/ToggleChat",
+    "tags": ["skyblock", "discontinued"]
+  },
+  {
+    "id": "nick-hider",
+    "name": "Nick Hider",
+    "discord": "https://discord.gg/sk1er",
+    "developers": "Sk1er",
+    "paid": false,
+    "icon": "https://imgur.com/YhHaso1.png",
+    "website": "https://sk1er.club/mods/nick_hider",
+    "tags": ["pvp"]
+  },
+  {
+    "id": "skypixel",
+    "name": "Skypixel",
+    "developers": "prplz",
+    "paid": false,
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+    "github": "https://github.com/prplz/Skypixel",
+    "tags": ["skyblock", "discontinued"]
+  },
+  {
+    "id": "blockoverlay",
+    "name": "BlockOverlay",
+    "developers": "Aycy",
+    "paid": false,
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+    "website": "https://hypixel.net/threads/forge-1-8-9-block-overlay-v4-0-3.1417995/",
+    "tags": ["skyblock"]
+  },
+  {
+    "id": "pownstogglesneak",
+    "name": "Powns' ToggleSneak Mod",
+    "discord": "https://download.powns.dev/togglesneak189",
+    "developers": "Powns",
+    "paid": false,
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+    "website": "https://www.curseforge.com/minecraft/mc-mods/togglesneak/",
+    "tags": ["pvp"]
+  },
+  {
+    "id": "autotip",
+    "name": "Autotip",
+    "discord": "https://discord.gg/sk1er",
+    "developers": "Semx11, 2Pi, Sk1er",
+    "paid": false,
+    "icon": "https://imgur.com/YhHaso1.png",
+    "website": "https://autotip.pro/", 
+    "github": "https://github.com/Semx11/Autotip", 
+    "tags": ["pvp"]
+  },
+  {
+    "id": "powns-mods",
+    "name": "Powns mods",
+    "discord": "https://discord.gg/VvFxmbn3",
+    "developers": "Powns",
+    "paid": false,
+    "icon": "https://imgur.com/u5X9OqP.png",
+    "website": "https://download.powns.dev",
+    "github": "https://github.com/pownsgg", 
+    "tags": ["pvp", "fps"]
+  },
+  {
+    "id": "itlt",
+    "name": "It's The Little Things",
+    "discord": "",
+    "developers": "Zlepper, Paint_Ninja",
+    "paid": false,
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+    "website": "https://www.curseforge.com/minecraft/mc-mods/its-the-little-things/",
+    "github": "https://github.com/zlepper/itlt",
+    "tags": ["fps"]
+  },
+  {
+    "id": "scrollable-tooltips",
+    "name": "Scrollable Tooltips",
+    "discord": "https://discord.gg/sk1er",
+    "developers": "Sk1er",
+    "paid": false,
+    "icon": "https://imgur.com/YhHaso1.png",
+    "website": "https://sk1er.club/mods/text_overflow_scroll",
+    "github": "https://github.com/Sk1erLLC/ScrollableTooltips",
+    "tags": ["fps"]
+  },
   {
     "id": "patcher",
     "name": "Patcher",
