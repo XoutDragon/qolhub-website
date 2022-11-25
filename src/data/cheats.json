@@ -1,5 +1,15 @@
 [
   {
+    "id": "gmtn",
+    "name": "GumTuneClient",
+    "discord": "https://discord.gg/gmtn",
+    "developers": "RoseGold",
+    "paid": false,
+    "icon": "https://imgur.com/chsDDyx.png",
+    "github": "https://github.com/RoseGoldIsntGay/GumTuneClient",
+    "tags": ["skyblock", "cheats"]  
+  },
+  {
     "id": "canebuilder",
     "name": "CaneBuilder",
     "discord": "https://discord.gg/MQwnhskNBD",
