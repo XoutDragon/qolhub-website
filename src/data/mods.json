@@ -1,5 +1,24 @@
 [ 
   {
+  "id": "dulkirmod",
+  "name": "DulkirMod",
+  "developers": "glettronald, hannibal002, GodOfProDev",
+  "paid": false,
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg", 
+  "github": "https://github.com/inglettronald/DulkirMod", 
+  "tags": ["skyblock"]
+  },
+  {
+    "id": "aton-addons",
+    "name": "Aton Addons (AA)",
+    "discord": "https://discord.gg/Cj46vS5qbY", 
+    "developers": "Aton",
+    "paid": false,
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg", 
+    "github": "https://github.com/FloppaCoding/AtonAddons", 
+    "tags": ["skyblock"]
+  },
+  {
     "id": "togglechat",
     "name": "ToggleChat",
     "developers": "boomboompower",
