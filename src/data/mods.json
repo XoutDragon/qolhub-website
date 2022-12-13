@@ -1,12 +1,12 @@
 [ 
   {
-  "id": "dulkirmod",
-  "name": "DulkirMod",
-  "developers": "glettronald, hannibal002, GodOfProDev",
-  "paid": false,
-  "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg", 
-  "github": "https://github.com/inglettronald/DulkirMod", 
-  "tags": ["skyblock"]
+    "id": "dulkirmod",
+    "name": "DulkirMod",
+    "developers": "glettronald, hannibal002, GodOfProDev",
+    "paid": false,
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg", 
+    "github": "https://github.com/inglettronald/DulkirMod", 
+    "tags": ["skyblock"]
   },
   {
     "id": "aton-addons",
@@ -226,10 +226,10 @@
     "id": "notenoughupdates",
     "name": "NotEnoughUpdates",
     "discord": "https://discord.gg/moulberry",
-    "developers": "Moulberry",
+    "developers": "Moulberry, Nea, Jani",
     "paid": false,
     "icon": "https://avatars.githubusercontent.com/u/12858993",
-    "github": "https://github.com/Moulberry/NotEnoughUpdates",
+    "github": "https://github.com/NotEnoughUpdates/NotEnoughUpdates",
     "tags": ["skyblock"]
   },
   {
