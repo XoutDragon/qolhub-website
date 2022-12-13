@@ -1,5 +1,23 @@
 [
   {
+    "id": "floppa-client",
+    "name": "Floppa Client",
+    "discord": "https://discord.gg/Cj46vS5qbY", 
+    "developers": "Aton",
+    "paid": false,
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+    "tags": ["skyblock, cheats"]
+  },
+  {
+    "id": "ambient-addons",
+    "name": "Ambient Addons",
+    "discord": "https://discord.gg/3NF6rGFhNK",
+    "developers": "appable",
+    "paid": false,
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+    "tags": ["skyblock", "cheats"]
+  },
+  {
     "id": "gmtn",
     "name": "GumTuneClient",
     "discord": "https://discord.gg/D9nsGEkYhm",
