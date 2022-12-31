@@ -1,5 +1,15 @@
 [ 
   {
+    "id": "oneconfig",
+    "name": "Polyfrost",
+    "discord": "https://inv.wtf/polyfrost",
+    "developers": "Polyfrost Team",
+    "paid": false,
+    "icon": "https://imgur.com/HPrBpF9.png", 
+    "github": "https://github.com/Polyfrost/OneConfig",
+    "tags": ["fps", "pvp"] 
+  },
+  {
     "id": "dulkirmod",
     "name": "DulkirMod",
     "developers": "glettronald, hannibal002, GodOfProDev",
