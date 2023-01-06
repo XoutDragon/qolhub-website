@@ -1,5 +1,16 @@
 [
   {
+    "id": "pandaflipper"
+    "name": "PandaFlipper",
+    "discord": "discord.gg/panda",
+    "developers": "TrashPanda",
+    "paid": true,
+    "price": "15$/100$/125$",
+    "icon": "https://imgur.com/qxsZD6l.png",
+    "website": "http://peletic.tech/",
+    "tags": ["skyblock", "paid"]
+  },
+  {
     "id": "floppa-client",
     "name": "Floppa Client",
     "discord": "https://discord.gg/Cj46vS5qbY", 
