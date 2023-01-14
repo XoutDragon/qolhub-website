@@ -1,5 +1,16 @@
 [
   {
+    "id": "Taunahi",
+    "name": "Taunahi",
+    "discord": "https://www.taunahi.net/discord",
+    "developers": "Alex",
+    "paid": true,
+    "price": "19,99$",
+    "icon": "https://imgur.com/CC0lKSS.png",
+    "website": "https://www.taunahi.net",
+    "tags": ["skyblock", "cheats"]
+  },
+  {
     "id": "pandaflipper",
     "name": "PandaFlipper",
     "discord": "discord.gg/panda",
