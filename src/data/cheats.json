@@ -1,6 +1,16 @@
 [
   {
-    "id": "Taunahi",
+    "id": "quicker-flipper",
+    "name": "QF",
+    "discord": "https://discord.gg/VymP3ujFAC",
+    "developers": "Domino , Nevo",
+    "paid": true,
+    "price": "50 USD",
+    "icon": "https://imgur.com/Z5cfTAY.png",
+    "tags": ["skyblock", "auction flipper", "auction sniper"]
+  },
+  {
+    "id": "taunahi",
     "name": "Taunahi",
     "discord": "https://www.taunahi.net/discord",
     "developers": "Alex",
