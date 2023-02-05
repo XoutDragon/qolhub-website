@@ -1,5 +1,17 @@
 [
   {
+    "id": "bossbar_customizer",
+    "name": "Aurora Client",
+    "discord": "https://discord.gg/uqv4c2pkgb",
+    "developers": "OctoSplash#6066 and gabagool#1952",
+    "paid": false,
+    "price": "free and 3.99$ for supporter", 
+    "icon": "https://cdn.discordapp.com/attachments/1034123380389060682/1070819850353655848/ezgif.com-gif-maker_5.gif",
+    "website": "https://auroraclient.lol",
+    "github": "https://github.com/OctoSplash01/AuroraClient",
+    "tags": ["skyblock", "cheats"]
+  },
+  {
     "id": "quicker-flipper",
     "name": "QF",
     "discord": "https://discord.gg/VymP3ujFAC",
