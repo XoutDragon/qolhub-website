@@ -1,5 +1,14 @@
 [
   {
+    "id": "odinclient",
+    "name": "OdinClient",
+    "discord": "https://discord.gg/Pk9gXWY5Hd",
+    "developers": "odtheking",
+    "paid": false,
+    "icon": "https://cdn.discordapp.com/attachments/981866882258829385/1071726386701680691/OdinClientNoBackround.png", 
+    "tags": ["skyblock", "cheats"]
+  },
+  {
     "id": "bossbar_customizer",
     "name": "Aurora Client",
     "discord": "https://discord.gg/uqv4c2pkgb",
