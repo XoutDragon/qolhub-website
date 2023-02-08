@@ -1,5 +1,14 @@
 [ 
   {
+    "id": "odinclient",
+    "name": "OdinClient",
+    "discord": "https://discord.gg/Pk9gXWY5Hd",
+    "developers": "odtheking",
+    "paid": false,
+    "icon": "https://i.imgur.com/bULLRVc.png", 
+    "tags": ["skyblock", "cheats"]
+  },
+  {
     "id": "oneconfig",
     "name": "Polyfrost",
     "discord": "https://inv.wtf/polyfrost",
