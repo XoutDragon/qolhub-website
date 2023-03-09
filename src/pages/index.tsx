@@ -75,7 +75,7 @@ export default function Home() {
             className={`text-center mt-4 flex justify-evenly md:grid md:grid-cols-4 gap-2`}
           >
             <a
-              href='https://discord.gg/qolhub'
+              href='https://discord.gg/qhub'
               className='bg-blue-700 p-3 rounded-lg h-full my-auto opacity-80 hover:opacity-100 shadow-lg'
             >
               <FaDiscord
