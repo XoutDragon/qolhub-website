@@ -1,4 +1,13 @@
 [
+    {
+    "id": "sft",
+    "name": "SFT+ Macro",
+    "discord": "https://discord.gg/EKX4HJdsZ6",
+    "developers": "MlxySF#7592, TyroneBBC#5974",
+    "paid": true,
+    "icon": "https://cdn.discordapp.com/icons/1028386289030004826/e0f7be78513de0d85fb68e3238c509af.webp?size=96", 
+    "tags": ["skyblock", "cheats"]
+  },
   {
     "id": "odinclient",
     "name": "OdinClient",
