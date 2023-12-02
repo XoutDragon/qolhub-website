@@ -11,12 +11,18 @@ import { BsGearFill } from 'react-icons/bs';
 import { ModCard } from '../components/modCard';
 import { IoClose } from 'react-icons/io5';
 import { Popover } from '@headlessui/react';
+import { useRouter } from 'next/router';
 
 export default function Home() {
   const [enableCheats, setCheats] = useState(false);
   const [filter, setFilter] = useState('');
   const [enablePaid, setPaid] = useState(true);
   const [discontinued, setDiscontinued] = useState(true);
+
+  const router = useRouter();
+  useEffect(() => {
+    router.push('https://www.qolhub.gg')
+  }, [])
 
   const cheatText = enableCheats
     ? 'Show Cheats: Enabled'
