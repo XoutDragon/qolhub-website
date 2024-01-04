@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Footer from '../components/home/Footer';
 import Header from '../components/home/Header';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { filterMods } from '../helpers/filterMods';
 import { FaExclamationTriangle, FaDiscord } from 'react-icons/fa';
 import { BsGearFill } from 'react-icons/bs';
