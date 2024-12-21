@@ -20,9 +20,6 @@ export default function Home() {
   const [discontinued, setDiscontinued] = useState(true);
 
   const router = useRouter();
-  useEffect(() => {
-    router.push('https://www.qolhub.gg')
-  }, [])
 
   const cheatText = enableCheats
     ? 'Show Cheats: Enabled'
